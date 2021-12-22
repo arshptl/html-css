@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: pink;
+  height: 60px;
+  justify-content: center;
+}
+
+.padding{
+    width: 90%;
+    max-width: 1240px;
+    margin: 60px auto 50px auto;
+    flex-grow: 1;
+}
+
+.externalDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.styledDiv{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    /* padding: 20px; */
+    background-color: red;
+}
+
+@media (min-width: 600px) {
+    .externalDiv{
+    flex-direction: row;
+    }
+
+    .styledDiv{
+       width: 44%;
+    }
+
+    .padding{
+      width: 90%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .styledDiv{
+        width: 30%;
+     }
+
+     .padding{
+       width: 80%;
+     }
+}
